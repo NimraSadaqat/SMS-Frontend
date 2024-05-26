@@ -1,0 +1,99 @@
+@import "../../styles/variables.scss";
+
+.addStudent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.important {
+  grid-column: span 2;
+ 
+}
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  // max-width: 800px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  grid-column: span 2;
+}
+
+label {
+  color: black;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+label.required::before {
+  content: '*';
+  color: red;
+  margin-right: 0.25rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.submit_btn {
+  grid-column: span 2;
+  padding: 0.75rem;
+  background-color: $soft-bg;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.submit_btn:hover {
+  background-color: $dark-bg;
+}
+
+p {
+  color: red;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+}

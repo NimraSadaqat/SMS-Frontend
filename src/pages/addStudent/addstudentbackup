@@ -1,0 +1,157 @@
+  {/* <div>
+          <label className='required'>Father's Name</label>
+          <input {...register('father_name')} />
+          <p>{errors.father_name?.message}</p>
+        </div> */}
+        <Input
+          label="Mother's Name"
+          ClassName='required'
+          name="mother_name"
+          register={register}
+          errors={errors}
+        />
+        {/* <div>
+          <label className='required'>Mother's Name</label>
+          <input {...register('mother_name')} />
+          <p>{errors.mother_name?.message}</p>
+        </div> */}
+        <Input
+          label="Father's NIC Number"
+          ClassName='required'
+          name="father_nic_number"
+          register={register}
+          errors={errors}
+        />
+        {/* <div>
+          <label className='required'>Father's NIC Number</label>
+          <input {...register('father_nic_number')} />
+          <p>{errors.father_nic_number?.message}</p>
+        </div> */}
+        <Input
+          label="Mother's NIC Number"
+          ClassName='required'
+          name="mother_nic_number"
+          register={register}
+          errors={errors}
+        />
+        {/* <div>
+          <label className='required'>Mother's NIC Number</label>
+          <input {...register('mother_nic_number')} />
+          <p>{errors.mother_nic_number?.message}</p>
+        </div> */}
+        <Input
+          label="Father's Occupation"
+          ClassName='required'
+          name="father_occupation"
+          register={register}
+          errors={errors}
+        />
+        {/* <div>
+          <label className='required'>Father's Occupation</label>
+          <input {...register('father_occupation')} />
+          <p>{errors.father_occupation?.message}</p>
+        </div> */}
+        <Input
+          label="Mother's Occupation"
+          name="mother_occupation"
+          register={register}
+          errors={errors}
+        />
+        {/* <div>
+          <label>Mother's Occupation</label>
+          <input {...register('mother_occupation')} />
+          <p>{errors.mother_occupation?.message}</p>
+        </div> */}
+        <Input
+          label="Father's Monthly Income"
+          ClassName='required'
+          type='number'
+          name="father_monthly_income"
+          register={register}
+          errors={errors}
+        />
+        {/* <div>
+          <label className='required'>Father's Monthly Income</label>
+          <input type="number" {...register('father_monthly_income')} />
+          <p>{errors.father_monthly_income?.message}</p>
+        </div> */}
+        <Input
+          label="Mother's Monthly Income"
+          type='number'
+          name="mother_monthly_income"
+          register={register}
+          errors={errors}
+        />
+        {/* <div>
+          <label>Mother's Monthly Income</label>
+          <input type="number" {...register('mother_monthly_income')} />
+          <p>{errors.mother_monthly_income?.message}</p>
+        </div> */}
+        <div>
+          <label className='required'>Father's Qualification</label>
+          <input {...register('father_qualification')} />
+          <p>{errors.father_qualification?.message}</p>
+        </div>
+        <div>
+          <label>Mother's Qualification</label>
+          <input {...register('mother_qualification')} />
+          <p>{errors.mother_qualification?.message}</p>
+        </div>
+        <div>
+          <label className='required'>Father's Address</label>
+          <textarea {...register('father_address')} />
+          <p>{errors.father_address?.message}</p>
+        </div>
+        <div>
+          <label>Mother's Address</label>
+          <textarea {...register('mother_address')} />
+          <p>{errors.mother_address?.message}</p>
+        </div>
+        <div>
+          <label className='required'>Father's Cell Number</label>
+          <input {...register('father_cell_number')} />
+          <p>{errors.father_cell_number?.message}</p>
+        </div>
+        <div>
+          <label>Mother's Phone Number</label>
+          <input {...register('mother_phone_number')} />
+          <p>{errors.mother_phone_number?.message}</p>
+        </div>
+        <div>
+          <label>Father's Phone Number</label>
+          <input {...register('father_phone_number')} />
+          <p>{errors.father_phone_number?.message}</p>
+        </div>
+        <div>
+          <label>Mother's Cell Number</label>
+          <input {...register('mother_cell_number')} />
+          <p>{errors.mother_cell_number?.message}</p>
+        </div>
+        <div>
+          <label>Father's Office Address</label>
+          <textarea {...register('father_office_address')} />
+          <p>{errors.father_office_address?.message}</p>
+        </div>
+        <div>
+          <label>Father's Office Number</label>
+          <input {...register('father_office_number')} />
+          <p>{errors.father_office_number?.message}</p>
+        </div>
+        <div>
+          <label>Father's Email</label>
+          <input {...register('father_email')} />
+          <p>{errors.father_email?.message}</p>
+        </div>
+        <div>
+          <label>Emergency Number</label>
+          <input {...register('emergency_number')} />
+          <p>{errors.emergency_number?.message}</p>
+        </div>
+        <div>
+          <label className='required'>Status</label>
+          <select {...register('status')}>
+            <option value="current">Current</option>
+            <option value="left">Left</option>
+          </select>
+          <p>{errors.status?.message}</p>
+        </div>
